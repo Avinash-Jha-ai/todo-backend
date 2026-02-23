@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieparser());
 app.use(cors({
-    origin: ["http://localhost:5173", "http://localhost:5174"],
+    origin: ["https://todo-rift.onrender.com/", "https://todo-rift.onrender.com/"],
     credentials: true
 }))
 app.use(express.static("./public"))
